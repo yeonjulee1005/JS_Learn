@@ -1,27 +1,26 @@
 
 const calculator = {
     add: function(num1,num2) {
-        console.log(num1 + num2);
+        return num1 + num2;
     },
     minus: function(num1,num2) {
-        console.log(num1 - num2);
+        return num1 - num2;
     },
     multi: function(num1,num2) {
-        console.log(num1*num2);
+        return num1 * num2;
     },
     devide: function(num1,num2) {
-        console.log(num1/num2);
+        return num1 / num2;
     },
     powerof: function(num1,num2) {
-        console.log(num1**num2);
+        return num1 ** num2;
     }
 }
 
 
 
-
-calculator.add(1,2);
-calculator.minus(11,33);
-calculator.multi(66,11);
-calculator.devide(11,22);
-calculator.powerof(22,44);
+const plusResult = calculator.add(2,44);
+const minusResult = calculator.minus(2,44);
+const muntiResult = calculator.multi(3,plusResult);
+const devideResult = calculator.devide(muntiResult, 44);
+const powerOfResult = calculator.powerof(plusResult, devideResult);
