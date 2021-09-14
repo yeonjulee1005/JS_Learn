@@ -24,5 +24,5 @@ if (savedUserName === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);   // 로컬 스토리지에 사용자 이름이 없으면 show the form
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-    paintGreetings(username);
+    paintGreetings(savedUserName);
 }
