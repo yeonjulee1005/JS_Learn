@@ -8,9 +8,9 @@ const USERNAME_KEY = "username";
 function onLoginSubmit(event) {
     event.preventDefault(); // 기본적인 브라우저의 동작을 막는 함수 Form의 자동 새로고침 방지
     loginForm.classList.add(HIDDEN_CLASSNAME); // #loginForm에 .hidden 를 추가하는 것, greeting은 보이게 form은 안보이게!
-    const username = loginInput.value; // <input> 에 value를 넣는다! 사용자 이름
-    localStorage.setItem(USERNAME_KEY, username); // 로컬스토리지에 key:username , value:사용자이름 으로 저장
-    paintGreetings(username);
+    const usernameThatTheUserWrote = loginInput.value; // <input> 에 value를 넣는다! 사용자 이름
+    localStorage.setItem(USERNAME_KEY, usernameThatTheUserWrote); // 로컬스토리지에 key:username , value:사용자이름 으로 저장
+    paintGreetings(usernameThatTheUserWrote);
 }
 
 function paintGreetings(username) {
