@@ -1,0 +1,140 @@
+html, body {
+    position: relative;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+}
+
+section {
+    z-index: 1;
+    position: relative;
+}
+
+.timetable {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    margin: 300px auto 0;
+    font-weight: bold;
+    font-size: 150px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 10px #000;
+}
+
+#seconds {
+    position: relative;
+    font-size: 40px;
+    margin-left: -30px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+button.form-enter {
+    display: none;
+}
+
+.login-input {
+    display: block;
+    border: 0;
+    background: 0;
+    position: relative;
+    width: 390px;
+    border-bottom: 2px solid #0d0d0d;
+    font-size: 33px;
+    color: #808080;
+    text-align: center;
+    margin: 20px auto 0;
+    line-height: 46px;
+}
+
+.login-input:focus-visible {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0d0d0d;
+}
+
+#greeting {
+    display: block;
+    border: 0;
+    background: 0;
+    position: relative;
+    width: 390px;
+    font-size: 33px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 10px #000;
+    text-align: center;
+    margin: 20px auto 0;
+    line-height: 46px;
+}
+
+.todo-contents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-contents ul {
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.todo-input {
+    display: block;
+    border: 0;
+    background: 0;
+    position: relative;
+    width: 600px;
+    border-bottom: 2px solid #0d0d0d;
+    font-size: 33px;
+    color: #808080;
+    text-align: center;
+    margin: 20px auto 0;
+    line-height: 46px;
+}
+
+.todo-input:focus-visible {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0d0d0d;
+}
+
+.contents {
+    position: fixed;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    width: 98%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.quote {
+    position: relative;
+    display: flex;
+    color: #0d0d0d;
+}
+
+.weather {
+    position: relative;
+    display: flex;
+    color: #f5f5f5;
+}

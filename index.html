@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" media="(max-width:1260px)" href="css/ipad.css">
+    <link rel="stylesheet" media="(max-width:600px)" href="css/phone.css">
     <title>Momentum App</title>
 </head>
 <body>
+    <section class="section_main">
+        <div class="timetable">
+            <span class="clock" id="clock"></span>
+            <span class="seconds" id="seconds"></span>
+        </div>
+        <div class="secondtable">
+        </div>
     <form class="hidden" id="login-form">
-        <input required minlength="3" maxlength="15" type="text" placeholder="What is your name?">
-        <button>Log In</button>
+        <input class="login-input" required minlength="3" maxlength="15" type="text" placeholder="What is your name?">
+        <button class="form-enter">Log In</button>
     </form>
 
     <h1 class="hidden" id="greeting"></h1>
-    <h2 id="clock">00:00</h2>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a Todo and Press Enter" required>
-    </form>
-    <ul id="todo-list"></ul>
 
-    <div id="quote">
-        <span></span>
-        <span></span>
+
+    <div class="todo-contents">
+        <form id="todo-form">
+            <input class="todo-input" type="text" placeholder="Write a Todo and Press Enter" required>
+        </form>
+        <ul id="todo-list"></ul>
     </div>
+
+    <div class="contents">
+        <div class="quote" id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="weather" id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    
+    </div>
+    
+    </section>
 
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 
 </html>
