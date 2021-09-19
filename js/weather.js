@@ -11,12 +11,12 @@ function onGeoSucess(position) {
         const weatherContainer = document.querySelector("#weather span:first-child");
         const cityContainer = document.querySelector("#weather span:last-child");
         cityContainer.innerText = data.name;
-        weatherContainer.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+        weatherContainer.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
     });
 }
 
 function onGeoFailed() {
-    alert("Can't Find you. No weather for you.");
+    alert("당신의 위치를 확인할 수 없어요. 날씨를 못알려주겠군요.");
 }
 
 // 지오로케이션 현재위치 받아오는 함수 (받아오기 성공시 함수 / 실패시 함수 / 옵션)

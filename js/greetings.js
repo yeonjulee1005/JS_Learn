@@ -14,7 +14,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-    greeting.innerText = `hello ${username}`;  // #greeting에 text와 username으로 받은내용 작성!
+    greeting.innerText = `오늘도 반가워, ${username}`;  // #greeting에 text와 username으로 받은내용 작성!
     greeting.classList.remove(HIDDEN_CLASSNAME);   // 로컬 스토리지에 사용자 이름이 있으면 show greetings
 }
 

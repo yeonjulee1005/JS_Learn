@@ -36,15 +36,16 @@ function paintToDo(newTodo) {
     const createLi = document.createElement("li");   // html에 li 생성
     createLi.id = newTodo.id;  // li 생성시, newTodo의 아이디값을 기록  
     
+    const createButton = document.createElement("button");   // html에 button 생성
+    createButton.innerText = "✔";
+    createButton.addEventListener("click", deleteToDo);
+
     const createSpan = document.createElement("span");    // html에 sapn 생성
     createSpan.innerText = newTodo.text;    // newTodo의 오브젝트에서 텍스트만 sapn에 작성
 
-    const createButton = document.createElement("button");   // html에 button 생성
-    createButton.innerText = "❌";
-    createButton.addEventListener("click", deleteToDo);
-
-    createLi.appendChild(createSpan);
     createLi.appendChild(createButton);     // 앞의 태그 안에 뒤의 태그를 넣는 작업
+    createLi.appendChild(createSpan);
+
     
     toDoList.appendChild(createLi);
     saveToDos();
